@@ -1,0 +1,106 @@
+#game_board {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  gap: 0px;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.snake {
+  background-color: green;
+}
+
+.food {
+  background-color: red;
+}
+
+body {
+  display: flex;
+}
+
+p {
+  text-align: center;
+}
+
+.controls {
+  flex-grow: 1;
+}
+
+
+
+#up_btn, #down_btn, #right_btn, #left_btn {
+  border-radius: 50%;
+  background-color: aqua;
+  height: 100px;
+  width: 100px; 
+}
+
+#score {
+  display: flex;
+  justify-content: center;
+  background-color: aquamarine;
+  height: 20px;
+  border-radius: 10%;
+  width: auto;
+  padding: 10px;
+  margin-top: 40px;
+  margin-left: 110px;
+  margin-right: 400px;
+}
+
+#Input_speed {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 15px;
+  width: 270px;
+  margin-left: 12px;
+}
+
+#myInput {
+  margin-left: 10px;
+  height: 20px;
+  width: 50px;
+}
+
+#joystick {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  margin: 50px;
+  width: 200px;
+  height: 200px;
+  transform: rotate(45deg);
+}
+
+#image1 {
+  height: 50px;
+  width: 50px; 
+  transform: rotate(-90deg);
+}
+#image2 {
+  width: 50px;
+  height: 50px;
+  transform: rotate(0deg);
+}
+#image3 {
+  width: 50px;
+  height: 50px;
+  transform: rotate(180deg);
+}
+#image4 {
+  width: 50px;
+  height: 50px;
+  transform: rotate(90deg);
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+}

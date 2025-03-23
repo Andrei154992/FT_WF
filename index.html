@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Игра змейка</title>
+    <link rel="icon" type="image/x-icon" href="images\snake.ico">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div id="game_board"></div>
+      <div id="joystick">
+        <button id="up_btn">
+          <img id="image1"
+            alt = ""
+            src = "images\top_right.png" 
+          />   
+        </button>
+        <button id="right_btn">
+          <img id="image2"
+            alt = ""
+            src = "images\top_right.png" 
+          /> 
+        </button>
+        <button id="left_btn">
+          <img id="image3"
+            alt = ""
+            src = "images\top_right.png" 
+          /> 
+        </button>
+        <button id="down_btn">
+          <img id="image4"
+            alt = ""
+            src = "images\top_right.png" 
+          /> 
+        </button>
+      </div>  
+      <div id="score">
+        <p>Очки: </p>
+        <p>0</p>
+      </div> 
+      <div id="Input_speed"> 
+        <p>Изменить скорость змейки:</p>
+        <input type="number", id="myInput", value = "1", min = "1", max = "5" step = "1">
+      </div> 
+    </div>
+  </body>
+</html>
